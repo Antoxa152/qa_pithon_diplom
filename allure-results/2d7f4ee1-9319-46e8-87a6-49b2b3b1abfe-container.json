@@ -1,0 +1,1 @@
+{"uuid": "8f3e29e7-5252-49da-9c67-26bff2e02839", "befores": [{"name": "ingredients_count", "status": "passed", "start": 1792932808322, "stop": 1792932808322}], "afters": [{"name": "ingredients_count::<lambda>", "start": 1792932808338}], "start": 1792932808322, "stop": 1792932808338}
