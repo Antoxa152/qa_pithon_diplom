@@ -140,10 +140,10 @@ def test_get_receipt():
     receipt = burger.get_receipt()
 
     lines = receipt.splitlines()
-    assert lines[0] == "(==== Premium Bun ====")
+    assert lines[0] == "(==== Premium Bun ===="
     assert "= filling chicken =" in lines[1].lower()
     assert "= sauce garlic =" in lines[2].lower()
-    assert lines[3] == "(==== Premium Bun ====")
+    assert lines[3] == "(==== Premium Bun ===="
 
     assert "Price: 215.0" in receipt
 
@@ -161,6 +161,6 @@ def test_get_receipt_empty_ingredients():
     receipt = burger.get_receipt()
     lines = receipt.splitlines()
 
-    assert lines[0] == "(==== Basic Bun ====")
-    assert lines[1] == "(==== Basic Bun ====")
+    assert lines[0] == "(==== Basic Bun ===="
+    assert lines[1] == "(==== Basic Bun ===="
     assert "Price: 60.0" in receipt
